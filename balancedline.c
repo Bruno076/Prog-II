@@ -1,12 +1,20 @@
 //Aluno: Bruno Legentil de Matos
-//Matrícula: 0050015204
+//MatrÃ­cula: 0050015204
 #include <stdio.h> <string.h>
 
 int main()
 {
-FILE *arq1=fopen("arq1.txt", "r");
-FILE *arq2=fopen("arq2.txt", "r");
+    char nome[100];
+    char nome2[100];
 
+    printf("\nEntre com o nome do arquivo 1:");
+    gets(nome);
+
+    printf("\nEntre com o nome do arquivo 2:");
+    gets(nome2);
+
+FILE *arq1=fopen(nome, "r");
+FILE *arq2=fopen(nome2, "r");
 FILE *arq3=fopen("arq3.txt", "w");
 
 char linha[100];
